@@ -214,7 +214,7 @@ if __name__ == "__main__":
         im_names_desc = tqdm(loop())
     else:
         data_len = det_loader.length
-        im_names_desc = tqdm(range(data_len), dynamic_ncols=True)
+        im_names_desc = tqdm(range(data_len-2), dynamic_ncols=True)
 
     batchSize = args.posebatch
     if args.flip:
